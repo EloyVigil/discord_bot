@@ -7,6 +7,7 @@ load_dotenv()
 discord_token = os.getenv('DISCORD_TOKEN')
 
 class MyClient(discord.Client):
+    
     async def on_ready(self):
         print("Successfully logged in as: ", self.user)
 
