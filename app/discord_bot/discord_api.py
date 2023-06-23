@@ -28,6 +28,7 @@ class MyClient(discord.Client):
                 await message.channel.send(f"Answer: {bot_response}")
 
 intents = discord.Intents.default()
+
 intents.message_content = True
 
 client = MyClient(intents = intents)
